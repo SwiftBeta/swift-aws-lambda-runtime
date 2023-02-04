@@ -30,7 +30,7 @@ internal final class MockLambdaServer {
     private var channel: Channel?
     private var shutdown = false
 
-    init(behavior: LambdaServerBehavior, host: String = "127.0.0.1", port: Int = 7000, keepAlive: Bool = true) {
+    init(behavior: LambdaServerBehavior, host: String = "127.0.0.1", port: Int = 8000, keepAlive: Bool = true) {
         self.group = MultiThreadedEventLoopGroup(numberOfThreads: 1)
         self.behavior = behavior
         self.host = host

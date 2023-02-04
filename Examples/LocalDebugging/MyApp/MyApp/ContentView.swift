@@ -56,7 +56,7 @@ struct ContentView: View {
     }
 
     func register() async throws -> String {
-        guard let url = URL(string: "http://127.0.0.1:7000/invoke") else {
+        guard let url = URL(string: "http://127.0.0.1:8000/invoke") else {
             fatalError("invalid url")
         }
         var request = URLRequest(url: url)

@@ -26,7 +26,7 @@ internal struct MockServer {
     public init() {
         self.group = MultiThreadedEventLoopGroup(numberOfThreads: System.coreCount)
         self.host = env("HOST") ?? "127.0.0.1"
-        self.port = env("PORT").flatMap(Int.init) ?? 7000
+        self.port = env("PORT").flatMap(Int.init) ?? 8000
         self.mode = env("MODE").flatMap(Mode.init) ?? .string
     }
 
